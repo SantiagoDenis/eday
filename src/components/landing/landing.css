@@ -1,0 +1,73 @@
+
+.img1 {
+    width: 100vw;
+    height: 65vh;
+    background-color: cyan;
+}
+.img2 {
+    width: 100vw;
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+
+
+.landing {
+    background-color: rgb(170, 155, 155);
+    width: 100vw;
+}
+
+.landing__box {
+    height: 65vh;
+    width: 55%;
+}
+
+.landing__box--left {
+    background-color: rgb(231, 41, 41);
+}
+
+.landing__box--right {
+    background-color: rgb(63, 53, 53);
+    margin-left: 45%;
+}
+
+.landing__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    height: 50%;
+    width: 100%;
+}
+
+.landing__text h1 {
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    font-size: 3.9em;
+    color: white;
+}
+
+.landing__text p {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.landing__btn {
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.landing__btn button {
+    margin-bottom: 8%;
+    margin-right: 8%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
