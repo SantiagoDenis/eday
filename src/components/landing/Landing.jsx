@@ -1,4 +1,4 @@
-import './landing.css'
+import './landing.scss'
 
 const Landing = () => {
     return (

@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react"
-import './navbar.css'
+import './navbar.scss'
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
     return (
@@ -8,21 +9,21 @@ const Navbar = () => {
                 imagen
             </div>
             <div className="navbar__links">
-                <a href="#">
+                <NavLink to={'productos'}>
                     Productos
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to={'productos-populares'}>
                     Productos Populares
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to={'estudio-creativo'}>
                     Estudio Creativo
-                </a>
-                <a href="#">
+                </NavLink>
+                <NavLink to={'sobre-nosotros'}>
                     Quienes Somos
-                </a>
-                <a href="#">
-                    Contactanos
-                </a>         
+                </NavLink>
+                <NavLink to={'contacto'}>
+                    Contactanos         
+                </NavLink>
             </div>
             <div className="navbar__socials">
                 <a href="#">

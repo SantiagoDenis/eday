@@ -1,0 +1,84 @@
+.contactData {
+    height: 75vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contactData__info {
+    width: 95%;
+    height: 85%;
+    background-color: rgb(231, 41, 41);
+    color: white;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.contactData__img {
+    background-color: rgb(170, 155, 155);
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    top: 0;
+}
+
+.contactData__text {
+    margin-left: 50%;
+    margin-top: 5%;
+}
+
+.contactData__text h1 {
+    font-weight: 500;
+    font-size: 2.9em;
+}
+
+.contactData_icons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.contactData_icon {
+    display: flex;
+    align-items: center;
+}
+
+.communications {
+    height: 40vh;
+    width: 100vw;
+    background-color: rgb(109, 104, 104);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.communications__column {
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+}
+
+.communications__column h1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.communications__column--left::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    height: 100%;
+    width: 6px;
+    left: -5%;
+}
+
+.communications__column--right::before {
+    content: '';
+    background-color: red;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    right: 110%;
+}
