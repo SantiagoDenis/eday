@@ -1,5 +1,5 @@
 
-import './App.css';
+import './App.scss';
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 
 import Footer from './components/footer/Footer';
@@ -9,6 +9,7 @@ import ProductList from './components/prodList/ProdList';
 import PopularPList from './components/popularPList/PopularPList';
 import Contact from './components/contact/Contact';
 import About from './components/about/About';
+import ProductDetailsContainer from './components/productDetailsContainer/ProductDetailsContainer';
 
 const App = () => {
   return (
@@ -22,6 +23,8 @@ const App = () => {
             <Route path='/' element={<Landing/>}/>
 
             <Route path='productos' element={<ProductList/>} />
+
+            <Route path='item/:id' element={<ProductDetailsContainer/>}/>
 
             <Route path='productos-populares' element={<PopularPList/>} />
 
