@@ -10,6 +10,7 @@ import PopularPList from './components/popularPList/PopularPList';
 import Contact from './components/contact/Contact';
 import About from './components/about/About';
 import ProductDetailsContainer from './components/productDetailsContainer/ProductDetailsContainer';
+import Creative from './components/creative/Creative';
 
 const App = () => {
   return (
@@ -24,13 +25,15 @@ const App = () => {
 
             <Route path='productos' element={<ProductList/>} />
 
-            <Route path='item/:id' element={<ProductDetailsContainer/>}/>
+            <Route path='producto/:id' element={<ProductDetailsContainer/>}/>
 
             <Route path='productos-populares' element={<PopularPList/>} />
 
             <Route path='contacto' element={<Contact/>}/>
 
             <Route path='sobre-nosotros' element={<About/>}/>
+
+            <Route path='estudio-creativo' element={<Creative/>}/>
 
             <Route path='/*' element={<Navigate to='/' replace />} /> 
 

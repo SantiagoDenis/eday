@@ -1,3 +1,6 @@
+import './productDetails.scss'
+
+
 const ProductDetails = ({product}) => {
     return (
         <div></div>

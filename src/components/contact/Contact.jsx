@@ -1,5 +1,6 @@
 import './contact.scss'
 import {Icon} from '@iconify/react'
+import image from '../../assets/8734.jpg'
 
 
 const Contact = () => {
@@ -33,7 +34,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contactData__img">
-
+                    <img src={`${image}`} alt="imagen de clientes felices" />
                 </div>
             </div>
 

@@ -1,16 +1,19 @@
 import './product.scss'
 import { Icon } from "@iconify/react";
+import { Link } from 'react-router-dom';
 
 const Product = ({product}) => {
     return ( 
         <>
             <div className="productCard">
-                {/* <img src={`${product.img}`} alt={`Imagen del producto ${product.title}`} /> */}
+                {/* <img className="productCard__img" src={`${product.img}`} alt={`Imagen del producto ${product.title}`} /> */}
                 <div className="productCard__img"></div>
                 <h2>{product.title}</h2>
                 <small>{product.miniDesc}</small>
                 <div className="productCard__btns">
-                    <button>Más info</button>
+                    <Link to={`/producto/${product.id}`}>
+                        <button>Más info</button>
+                    </Link>
                     <button>Pedir por WhatsApp</button>
                 </div>
             </div>

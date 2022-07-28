@@ -21,6 +21,12 @@
     height: 85%;
     position: absolute;
     top: 0;
+
+    img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
 }
 
 .contactData__text {
@@ -51,6 +57,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .communications__column {

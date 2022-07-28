@@ -1,4 +1,5 @@
 import './about.scss'
+import imageH from '../../assets/1262.JPG'
 
 const About = () => {
     return (
@@ -11,6 +12,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="aboutBanner__img">
+                    <img src={`${imageH}`} alt="Foto de clientes contentos" />
                 </div>
             </div>
 
@@ -24,25 +26,34 @@ const About = () => {
                     </div>
                 </div>
                 <div className="aboutInfo__text">
-                    <h1>Lorem ipsum dolor sit amet</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero odio, velit, provident, magni neque ratione eum consequuntur iste in omnis dolores culpa exercitationem! Suscipit consectetur voluptatum id quisquam, debitis placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem vel nesciunt perspiciatis laudantium. Tempora, dolore? Corporis soluta minima praesentium, hic assumenda laboriosam cumque ex doloribus harum modi nostrum aut.</p>
+                    <h1>¿Quienes somos?</h1>
+                    <p>Eday.pe detalles eco amigables nace en octubre del 2018 en Sullana, Piura como una opción para ofrecer detalles eco amigables hechos totalmente de forma artesanal con indumentaria e insumos naturales, fomentando la reutilización.</p>
                     <br />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eos voluptates vero nam sint ullam fugiat vitae voluptatibus, consectetur corrupti aut officia molestiae quas excepturi saepe delectus quod distinctio laborum?</p>
+                    <p>Algunos de nuestros servicios son: detalles personalizados, regalitos, suvenires, además de diseño gráfico y asesoría en marketing.</p>
+                    <p>Somos un emprendimiento responsable, ágil y confiable. Nos preocupamos por dar el moejor servicio a nuestros clientes, brindando una compra segura y cómoda.</p>
+
+                    <h2>Fundadores</h2>
+                    <p>Alan Mejía Camacho y Mayra Alemán del Castillo</p>
+                    
                 </div>
             </div>
 
             <div className="values">
-                <div className="values__vision">
+                <div className="values__mission">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur similique maxime sed laborum ut esse atque? Minima architecto nostrum consequatur nobis. Magni reprehenderit consequuntur commodi quas ipsam quisquam perspiciatis a.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint optio tempora facilis illo vitae fuga hic laborum, quos delectus inventore molestias sunt voluptatum, minima eaque. Officiis saepe amet omnis consequatur.
+                        Fomentar el consumo eco amigable, trabajar con dedicación y creatividad los detalles eco amigables que ofrecemos, brindando atención personalizada para satisfacer las necesidades de nuestros clientes. 
                     </p>
                 </div>
                 <div className="values__sign values__sign--left"></div>
-                <div className="values__mission">
+                <div className="values__vision">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur similique maxime sed laborum ut esse atque? Minima architecto nostrum consequatur nobis. Magni reprehenderit consequuntur commodi quas ipsam quisquam perspiciatis a.
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint optio tempora facilis illo vitae fuga hic laborum, quos delectus inventore molestias sunt voluptatum, minima eaque. Officiis saepe amet omnis consequatur.
+                        Ser reconocidos como una empresa creativa, sustentable y socialmente responsable.
+                    </p>
+                </div>
+                <div className="values__sign values__sign--middle"></div>
+                <div className="values__value">
+                    <p>
+                        Honestidad, originalidad, creatividad, calidad, innovación, compromiso, responsablidad.
                     </p>
                 </div>
                 <div className="values__sign values__sign--right"></div>
