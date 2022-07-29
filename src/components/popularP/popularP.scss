@@ -16,11 +16,11 @@
 }
 
 .popularCard__text {
-    width: 50%;
+    width: 60%;
 }
 
 .popularCard__btns {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     margin-top: 4%;
@@ -28,7 +28,7 @@
 }
 
 .popularCard__btns button {
-    padding: 3.4%;
+    padding: 5px;
     background-color: rgb(231, 41, 41);
     border-radius: 10px;
     border: none;
@@ -91,5 +91,37 @@
     width: 20%;
     height: 20%;
     margin: 45px 0 0 50%;
+}
+
+@media screen and (min-width:1024px) {
+    .popularCard__btns button {
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .popularCard__btns button {
+        padding: 6px;
+        border-radius: 5px;
+        font-size: .8em;
+        font-weight: 100;
+    }
+}
+@media screen and (max-width:501px) {
+    .popularCard__btns{
+        flex-direction: column;
+        align-items:  center;
+        justify-content: space-between;
+    }
+    .popularCard__btns button {
+        padding: 4px;
+        border-radius: 5px;
+        font-size: .9em;
+        font-weight: 100;
+        width: 60%;
+    }
 }
 

@@ -1,7 +1,6 @@
 .footer {
     width: 100vw;
-    height: 30vh;
-    max-height: 300px;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,52 +10,55 @@
 
 .footer--flex {
     display: flex;
-    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     margin-top: 20px;
 }
 
 .footer__logo {
     margin: auto;
     width: 20%;
-    height: 200px;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer__img {
-    width: 70%;
-    height: 100%;
-    text-align: center;
+.footer__body {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 76%;
 }
 
-.footer__contact h3, .footer__text h3 {
+.footer__text h3 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 .footer__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 40%;
 }
 
 .footer__text p {
-    margin: 0 10%;
-    font-size: .9em;
+    font-size: .7em;
+    text-align: justify;
 }
 
 .footer__socials {
-    width: 40%;
+
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .footer__contact {
-    width: 50%;
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__contact a {
@@ -64,12 +66,71 @@
     align-items: center;
     text-decoration: none;
     color: black;
-    margin-left: 20%;
     margin-top: 7px;
 }
 .footer__contact p {
     margin-left: 5px;
     font-size: small;
-    font-weight: bold;
 }
 
+.footer__copyright p {
+    font-size: .6em;
+    font-weight: 400;
+}
+
+@media screen and (min-width:1024px) {
+    .footer {
+        margin-top: 4vh;
+        height: 30vh;
+    }
+    .footer--flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .footer__socials {
+        flex-direction: row;
+        width: 50%;
+    }
+    .footer__body {
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .footer__contact h3 {
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .footer__text h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer__text {
+        width: 55%;
+    }
+    .footer__text p {
+        margin: 0 10%;
+        font-size: .9em;
+    }
+    .footer__img {
+
+        height: 100%;
+        text-align: center;
+    }
+    .footer__logo {
+        height: 200px;
+        width: 15%;
+    }
+    .footer__contact {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:270px) {
+    .footer__text {
+        display: none;
+    }
+}

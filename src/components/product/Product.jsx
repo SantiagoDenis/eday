@@ -1,6 +1,7 @@
 import './product.scss'
 import { Icon } from "@iconify/react";
 import { Link } from 'react-router-dom';
+import liston from '../../assets/liston.svg'
 
 const Product = ({product}) => {
     return ( 
@@ -19,7 +20,7 @@ const Product = ({product}) => {
             </div>
             <div className="cardComplements">
                 <div className="cardComplements__price">
-                    <img className='cardComplements__sign' src="https://cdn-icons-png.flaticon.com/512/456/456114.png" />
+                    <img className='cardComplements__sign' src={`${liston}`} />
                     <strong>{product.price}</strong>
                 </div>
                 <div className="cardComplements__heart">

@@ -1,5 +1,6 @@
 import './about.scss'
 import imageH from '../../assets/1262.JPG'
+import imageM from '../../assets/4.jpeg'
 
 const About = () => {
     return (
@@ -19,7 +20,7 @@ const About = () => {
             <div className="aboutInfo">
                 <div className="aboutInfo__imgs">
                     <div className="aboutInfo__mainImg">
-
+                        <img src={`${imageM}`} alt="Imagen de los fundadores" />
                     </div>
                     <div className="aboutInfo__secImg">
 

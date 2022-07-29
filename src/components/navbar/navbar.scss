@@ -2,13 +2,19 @@
     height: 8vh;
     width: 100vw;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
+}
 
+.navbarMobile {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
     position: fixed;
+    width: 100vw;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .navbar__logo {
@@ -27,25 +33,84 @@
     text-decoration: none;
     color: black;
     font-size: .9em;
+    font-weight: 500;
 }
 
-.navbar__socials {
+.navbar__links a:hover {
+    color: rgb(231, 41, 41);
+    text-decoration: underline rgb(231, 41, 41) 2px;
+}
+
+.navbar__socials, .navbarMobile__socials {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        margin-left: 10%;
+        height: 22px;
+        width: 22px;
+    }
+
+}
+
+.navbarMobile__menuIcon {
+    width: 50%;
+    height: 60%;
+}
+
+.navbarMobile__menu {
     width: 20%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navbar__socials a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    margin-left: 10%;
-    height: 22px;
-    width: 22px;
-}
-.navbar__icon {
+
+.navbar__icon, .navbarMobile__icon {
     width: 100%;
     height: 100%;
+}
+
+.navbarMobile__links {
+    position: absolute;
+    top: 15vh;
+    z-index: 1000;
+    width: 100vw;
+    height: 24vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #000000, $alpha: .7);
+    justify-content: space-around;
+    
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: .9em;
+        font-weight: 500;
+        margin-left: 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbarMobile {
+        display: none;
+    }
+    
 }

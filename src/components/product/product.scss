@@ -34,18 +34,17 @@
 
 .cardComplements__price strong {
     position: absolute;
-    margin-top: 44px;
-    transform: translateX(-60px);
+    margin-top: 43px;
+    transform: translateX(-95px);
     color: white;
     font-size: 1.3em;
     font-weight: 400;
 }
 
 .cardComplements__sign {
-    width: 60px;
-    height: 150px;
-    transform: rotate(-90deg);
-    margin-left: 16.8%;
+    width: 104px;
+    height: 127px;
+    margin-left: 15.3%;
 }
 
 .cardComplements__heart {
@@ -68,11 +67,29 @@
 }
 
 .productCard__btns button {
-    padding: 12px;
+    padding: 8px;
     background-color: rgb(231, 41, 41);
-    border-radius: 10px;
+    border-radius: 7px;
     border: none;
     color: white;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 100;
+}
+
+@media screen and (min-width:1024px) {
+    .productCard__btns button {
+        padding: 12px;
+        border-radius: 10px;
+        font-size: 1em;
+        font-weight: 100;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .productCard__btns button {
+        padding: 8px;
+        border-radius: 5px;
+        font-size: .8em;
+        font-weight: 100;
+    }
 }
