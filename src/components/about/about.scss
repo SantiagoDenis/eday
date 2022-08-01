@@ -384,3 +384,18 @@
         }
     }
 }
+
+@media screen and (max-width:450px) {
+    .aboutBanner {
+        &__img {
+            width: 59%;
+        }
+        &__data {
+            margin-bottom: 0;
+            width: 98%;
+        }
+        &__text--mobile {
+            font-size: 1.8em;
+        }
+    }
+}
