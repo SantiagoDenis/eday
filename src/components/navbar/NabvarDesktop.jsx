@@ -1,13 +1,16 @@
 import { Icon } from "@iconify/react"
 import './navbar.scss'
 import { NavLink } from "react-router-dom"
+import logo from '../../assets/logo.jpg'
 
 
 const NavbarDesktop = () => {
     return (
         <div className="navbar">
             <div className="navbar__logo">
-                imagen
+                <NavLink to={'/'}>
+                    <img src={`${logo}`} alt="logo" style={{marginLeft: '3%', width: '42%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
+                </NavLink>
             </div>
             <div className="navbar__links">
                 <NavLink to={'/'}>

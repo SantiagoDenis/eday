@@ -1,6 +1,7 @@
 
 import './footer.scss'
 import { Icon } from '@iconify/react';
+import logo from '../../assets/logo.jpg'
 
 const Footer = () => {
     return (
@@ -8,13 +9,13 @@ const Footer = () => {
             <div className="footer--flex">
                 <div className="footer__logo">
                     <div className="footer__img">
-                        imagen
+                        <img src={`${logo}`} alt="logo" style={{width: '100%', height: '74%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
                     </div>
                 </div>
                 <div className="footer__body">
                     <div className="footer__text">
                         <h3>Quienes somos</h3>
-                        <p>Eday.pe detalles eco amigables nace en octubre del 2018 en Sullana, Piura como una opción para ofrecer detalles eco amigables artesanales.</p>
+                        <p>Eday.pe detalles eco amigables nace en octubre del 2018 en Sullana, Piura como una opción para ofrecer detalles eco amigables hechos totalmente de forma artesanal con indumentaria e insumos naturales, fomentando la reutilización.</p>
                     </div>
                     <div className="footer__socials">
                         <div className="footer__contact">

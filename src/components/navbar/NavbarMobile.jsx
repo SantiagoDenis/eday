@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react"
 import './navbar.scss'
 import { NavLink } from "react-router-dom"
+import logo from '../../assets/logo.jpg'
 
 
 const NavbarMobile = ({open, handleClick}) => {
@@ -15,7 +16,8 @@ const NavbarMobile = ({open, handleClick}) => {
                 </a>
             </div>
             <div className="navbarMobile__logo">
-                imagen
+                <img src={`${logo}`} alt="logo"/>
+
             </div>
             <div className="navbarMobile__menu" onClick={handleClick}>
                 {

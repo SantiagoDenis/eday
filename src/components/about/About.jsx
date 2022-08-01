@@ -1,6 +1,9 @@
 import './about.scss'
 import imageH from '../../assets/1262.JPG'
 import imageM from '../../assets/4.jpeg'
+import showroom from '../../assets/6.jpg'
+import creative from '../../assets/7.jpg'
+import details from '../../assets/logo.jpg'
 
 const About = () => {
     return (
@@ -10,6 +13,8 @@ const About = () => {
                     <div className="aboutBanner__text">
                         <h1 className='aboutBanner__text--sm'>Conoce nuestra</h1>
                         <h1 className='aboutBanner__text--lg'>Historia</h1>
+
+                        <h1 className='aboutBanner__text--mobile'>Conoce nuestra historia</h1>
                     </div>
                 </div>
                 <div className="aboutBanner__img">
@@ -64,20 +69,29 @@ const About = () => {
                 <div className="greetings__text">
                     <p>Te ofrecemos con mucho cariño</p>
                     <h1>Detalles ecoamigables, estudio y taller creativo</h1>
-                    <p style={{marginTop: '3%'}}>Conoce nuestros servicios:</p>
+                    <p style={{marginTop: '3%', marginBottom: '5vh'}}>Conoce nuestros servicios:</p>
                 </div>
 
                 <div className="greetings__services">
-                    <div className="greetings__service">
-                        <div className="greetings__img"></div>
-                        <p>Estudio Creativo</p>
+                    <div className="greetings__service" style={{gridArea: 'creative'}}>
+                        <div className="greetings__img" style={{height: '92%'}}>
+                            <img src={`${creative}`} alt="logo" style={{width: '100%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
+
+                        </div>
+                        <p style={{margin: '0'}}>Estudio Creativo</p>
                     </div>
-                    <div className="greetings__service">
-                        <div className="greetings__img"></div>
-                        <p>Detalles eco amigables</p>
+                    <div className="greetings__service" style={{gridArea: 'details'}}>
+                        <div className="greetings__img">
+                            <img src={`${details}`} alt="logo" style={{width: '100%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
+ 
+                        </div>
+                        <p >Detalles eco amigables</p>
                     </div>
-                    <div className="greetings__service">
-                        <div className="greetings__img"></div>
+                    <div className="greetings__service" style={{gridArea: 'showroom'}}>
+                        <div className="greetings__img">
+                            <img src={`${showroom}`} alt="logo" style={{width: '100%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
+ 
+                        </div>
                         <p>Showroom</p>
                     </div>
                 </div>

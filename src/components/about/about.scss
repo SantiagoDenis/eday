@@ -30,6 +30,10 @@
             font-weight: 300;
             font-size: 7em;
         }
+
+        &--mobile {
+            display: none;
+        }
     }
 
     &__img {
@@ -134,7 +138,7 @@
     }
 
     &__sign {
-        background-color: rgb(170, 155, 155);
+
         width: 20%;
         height: 20%;
         position: absolute;
@@ -189,7 +193,7 @@
         justify-content: center;
         align-items: center;
         width: 33%;
-        height: 80%;
+        height: 72%;
 
         p {
             margin-top: 7%;
@@ -198,9 +202,185 @@
     }
 
     &__img {
-        background-color: rgb(170, 155, 155);
         width: 70%;
         height: 100%;
     }
 }
 
+@media screen and (max-width:1024px) {
+    .container {
+        padding-top: 24vh;
+    }
+    .aboutBanner {
+        &__data {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 71%;
+        }
+
+        &__img {
+            transform: translateX(0px);
+            height: 92%;
+            top: -7%;
+        }
+
+        &__text {
+            &--sm {
+                display: none;
+            }
+            &--lg {
+                display: none;
+            }
+            &--mobile {
+                display: block;
+                font-weight: 300;
+                font-size: 4em;
+            }
+        }
+    }
+    .values {
+        height: 80vh;
+    }
+
+    .greetings {
+        width: 95vw;
+        &__text {
+            p {
+                font-weight: 300;
+                font-size: 1.2em;
+            }
+            h1 {
+                font-size: 4em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .aboutBanner {
+        &__data {
+            height: 62.48%;
+        }
+        &__img {
+            img {
+                height: 100%;
+            }
+        }
+        &__text {
+            &--mobile {
+                font-size: 3em;
+            }
+        }
+    }
+
+    .aboutInfo {
+        flex-direction: column;
+        height: 120vh;
+        margin-top: 5%;
+        &__text {
+            width: 90%;
+            h1{
+                font-size: 2em;
+                text-align: center;
+            }
+        }
+    }
+
+    .values {
+        flex-direction: column;
+        height: 120vh;
+
+        &__vision, &__mission, &__value {
+            width: 80%;
+        }
+    }
+    .greetings {
+        &__text {
+            p {
+                font-weight: 300;
+                font-size: 1em;
+            }
+            h1 {
+                font-size: 3em;
+            }
+        }
+        &__service {
+            width: 100%;
+            height: 80%;
+
+            p {
+                font-weight: 300;
+            }
+        }
+        &__services {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 'creative . details' '. showroom .';
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .aboutBanner {
+        height: 50vh;
+        &__data {
+            margin-bottom: 10%;
+            height: 63%;
+        }
+        &__img {
+            img {
+                height: 79.8%;
+            }
+        }
+        &__text {
+            &--mobile {
+                font-size: 2.4em;
+            }
+        }
+    }
+    .aboutInfo {
+        &__imgs {
+            width: 57%;
+        }
+        &__secImg {
+            transform: translateY(-4em);
+            width: 45%;
+        }
+        &__text {
+            h1{
+                font-size: 2em;
+            }
+        }
+    }
+    .greetings {
+        &__text {
+            p {
+                font-weight: 200;
+                font-size: 1em;
+            }
+            h1 {
+                font-weight: 200;
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .greetings {
+        height: 110vh;
+        &__service {
+            width: 50%;
+            height: 30%;
+        }
+
+        &__services {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

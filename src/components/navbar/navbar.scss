@@ -17,6 +17,22 @@
     z-index: 1000;
 }
 
+.navbarMobile__logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        min-width: 90px;
+        height: 83%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 .navbar__logo {
     width: 20%;
     height: 100%;   
@@ -113,4 +129,12 @@
         display: none;
     }
     
+}
+
+@media screen and (max-width: 600px) {
+    .navbarMobile__logo {
+        img {
+            height: 63%;
+        }
+    }
 }
