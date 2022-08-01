@@ -11,8 +11,8 @@ const Landing = () => {
                 {/* Estos divs simulan las imagenes */}
                 <div className="landing__box landing__box--left">
                     <div className="landing__text">
-                        <h1>Productos <br/> Ecoamigables</h1>
-                        <p>Lorem ipsum dolor </p>
+                        <h1 style={{marginTop: '14%'}}>Productos <br/> Ecoamigables</h1>
+                        <p>Hechos con materiales e insumos naturales y sanos. Los puedes personalizar a tu gusto, según temática u ocasión. Incluye papelería de alta calidad, personalizable. </p>
                     </div>
                     <div className="landing__btn">
                         <button>Ver productos</button>
@@ -20,8 +20,8 @@ const Landing = () => {
                 </div>
                 <div className="landing__box landing__box--right">
                     <div className="landing__text--right">
-                        <h1>Desayunos <br/> Personalizados</h1>
-                        <p>Lorem ipsum dolor </p>
+                        <h1 style={{marginTop: '14%'}}>Desayunos <br/> Personalizados</h1>
+                        <p>Acompaña las mañanas de tu ser querido con nuestros desayunos personalizados. Incluye papelería de alta calidad, personalizable y activación.</p>
                     </div>
                     <div className="landing__btn--right">
                         <button>Ver productos</button>
@@ -30,7 +30,7 @@ const Landing = () => {
                 <div className="landing__box landing__box--left">
                     <div className="landing__text">
                         <h1>Detalles <br/> Express</h1>
-                        <p>Lorem ipsum dolor </p>
+                        <p>Detalles rápidos, creativos y económicos.</p>
                     </div>
                     <div className="landing__btn">
                         <button>Ver productos</button>

@@ -28,6 +28,8 @@
 .footer__img {
     height: 100%;
     width: 100%;
+    max-width: 200px;
+    max-height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;

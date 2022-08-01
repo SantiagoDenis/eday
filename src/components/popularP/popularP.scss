@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .popularCard {
     height: 65vh;
     width: 100%;
@@ -68,18 +73,17 @@
 
 .popularCardComplements__price strong {
     position: absolute;
-    margin-top: 44px;
-    transform: translateX(-60px);
+    margin-top: 43px;
+    transform: translateX(-95px);
     color: white;
     font-size: 1.3em;
     font-weight: 400;
 }
 
 .popularCardComplements__sign {
-    width: 60px;
-    height: 150px;
-    transform: rotate(-90deg);
-    margin-left: 16.8%;
+    width: 104px;
+    height: 127px;
+    margin-left: 14.9%;
 }
 
 .popularCardComplements__heart {
