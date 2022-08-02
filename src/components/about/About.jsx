@@ -1,9 +1,10 @@
 import './about.scss'
-import imageH from '../../assets/1262.JPG'
+import imageH from '../../assets/1262.jpg'
 import imageM from '../../assets/4.jpeg'
 import showroom from '../../assets/6.jpg'
 import creative from '../../assets/7.jpg'
 import details from '../../assets/logo.jpg'
+import values from '../../assets/values.svg'
 
 const About = () => {
     return (
@@ -50,19 +51,28 @@ const About = () => {
                         Fomentar el consumo eco amigable, trabajar con dedicación y creatividad los detalles eco amigables que ofrecemos, brindando atención personalizada para satisfacer las necesidades de nuestros clientes. 
                     </p>
                 </div>
-                <div className="values__sign values__sign--left"></div>
+                <div className="values__sign values__sign--left">
+                    <img src={`${values}`} alt="Mision" />
+                </div>
+                <div className="values__text values__text--left">Misión</div>
                 <div className="values__vision">
                     <p>
                         Ser reconocidos como una empresa creativa, sustentable y socialmente responsable.
                     </p>
                 </div>
-                <div className="values__sign values__sign--middle"></div>
+                <div className="values__sign values__sign--middle">
+                    <img src={`${values}`} alt="Vision" />
+                </div>
+                <div className="values__text values__text--middle">Visión</div>
                 <div className="values__value">
                     <p>
                         Honestidad, originalidad, creatividad, calidad, innovación, compromiso, responsablidad.
                     </p>
                 </div>
-                <div className="values__sign values__sign--right"></div>
+                <div className="values__sign values__sign--right">
+                    <img src={`${values}`} alt="Valores" />
+                </div>
+                <div className="values__text values__text--right">Valores</div>
             </div>
 
             <div className="greetings">

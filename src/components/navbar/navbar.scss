@@ -20,6 +20,8 @@
 .navbarMobile__logo {
     width: 20%;
     height: 100%;
+    max-width: 134px;
+    max-height: 106px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +58,11 @@
 }
 
 .navbar__links a:hover {
+    color: rgb(231, 41, 41);
+    text-decoration: underline rgb(231, 41, 41) 2px;
+}
+
+.clicked {
     color: rgb(231, 41, 41);
     text-decoration: underline rgb(231, 41, 41) 2px;
 }

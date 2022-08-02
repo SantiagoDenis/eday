@@ -23,7 +23,10 @@
 .contactData__info {
     width: 95%;
     height: 85%;
-    background-color: rgb(231, 41, 41);
+/*     background-color: rgb(231, 41, 41); */
+    background-image: url('../../assets/2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     margin-left: auto;
     margin-top: auto;
@@ -116,15 +119,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
     h1 {
         font-size: 3em;
         font-weight: 400;
         margin-bottom: 3vh;
     }
     &__map {
-        background-color: darkblue;
         height: 70vh;
-        width: 90vw;
+        width: 98%;
         margin-bottom: 6vh;
     }
 }
@@ -328,17 +331,20 @@
 @media screen and (max-width: 380px) {
     .contactData {
         height: 70vh;
+        width: 100%;
         &__img {
             height: 50%;
-            width: 90%;
+            width: 100%;
             top: -8%;
         }
         &__info {
             height: 80%;
+            width: 100%;
         }
         &__text {
             h1 {
                 margin-top: 120px;
+                text-align: center;
             }
         }
     }

@@ -83,11 +83,17 @@
         display: block;
         font-family: 'Lobster', cursive;
         text-align: center;
-        font-size: 1em;
+        font-size: .7em;
         width: 90%;
         margin: auto;
         margin-bottom: 4vh;
         strong {
+            font-size: 1.3em;
+        }
+    }
+
+    .creative__text {
+        h2 {
             font-size: 1.3em;
         }
     }

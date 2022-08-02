@@ -146,6 +146,23 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+    .footer__socials, .footer__text {
+        font-size: .8em;
+    }
+    .footer__socials {
+        width: 40%;
+    }
+
+    .footer__contact {
+        a {
+            p {
+                font-size: .8em;
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width:270px) {
     .footer__text {

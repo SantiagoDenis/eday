@@ -1,8 +1,10 @@
 
 .img1 {
     width: 100vw;
-    height: 65vh;
-    background-color: cyan;
+    height: 75vh;
+    background-image: url('../../assets/landing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .img2 {
     width: 100vw;
@@ -127,15 +129,29 @@
         border-radius: 15px;
     }
     .landing__text h1, .landing__text--right h1 {
-        font-size: calc(4em + 0.390625vw);
+        font-size: calc(3em + 0.390625vw);
     }
   
 }
 
-@media screen and (max-width:380px) {
-    .landing__text h1, .landing__text--right h1 {
-        font-size: calc(1.7em + 0.390625vw) ;
+@media screen and (max-width:500px) {
+    .img1 {
+        display: none;
     }
+    .landing__text, .landing__text--right {
+        br {
+            display: none;
+        }
+        p {
+            font-size: .8em;
+        }
+        h1 {
+            font-size: 1.4em ;
+        }
+    }
+}
+
+@media screen and (max-width:380px) {
     .landing__text--right {
         margin-left: 7%;
     }

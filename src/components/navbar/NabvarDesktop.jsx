@@ -2,9 +2,11 @@ import { Icon } from "@iconify/react"
 import './navbar.scss'
 import { NavLink } from "react-router-dom"
 import logo from '../../assets/logo.jpg'
+import Link from "./Link"
 
 
 const NavbarDesktop = () => {
+
     return (
         <div className="navbar">
             <div className="navbar__logo">
@@ -14,22 +16,23 @@ const NavbarDesktop = () => {
             </div>
             <div className="navbar__links">
                 <NavLink to={'/'}>
-                    Inicio
+                    <Link name={'Inicio'} />
+                    
                 </NavLink>
                 <NavLink to={'productos'}>
-                    Productos
+                    <Link name={'Productos'} />
                 </NavLink>
                 <NavLink to={'productos-populares'}>
-                    Productos Populares
+                    <Link name={'Productos Populares'} />
                 </NavLink>
                 <NavLink to={'estudio-creativo'}>
-                    Estudio Creativo
+                    <Link name={'Estudio Creativo'} />
                 </NavLink>
                 <NavLink to={'sobre-nosotros'}>
-                    Quienes Somos
+                    <Link name={'Quienes Somos'} />
                 </NavLink>
                 <NavLink to={'contacto'}>
-                    Contactanos         
+                    <Link name={'Contactanos'} />         
                 </NavLink>
             </div>
             <div className="navbar__socials">
