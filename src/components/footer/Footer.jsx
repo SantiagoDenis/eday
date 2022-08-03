@@ -20,22 +20,22 @@ const Footer = () => {
                     <div className="footer__socials">
                         <div className="footer__contact">
                             <h3>Contáctanos</h3>
-                            <a href="#">
+                            <a href="https://wa.me/51939731510?text=¡Hola! Estoy interesado en contactarte. Mi motivo es:">
                                 <Icon icon="bi:whatsapp" color="#000"/>
-                                <p>7555-4562</p>
+                                <p>+51 939 731 510</p>
                             </a>
-                            <a href="#">
+                            <a href="mailto:alan.m.camacho@gmail.com">
                                 <Icon icon="mdi:gmail" color='#000'/>
                                 <p>eday@gmail.com</p>
                             </a>
                         </div>
                         <div className="footer__contact">
                             <h3>Siguenos en:</h3>
-                            <a href="#">
+                            <a href="https://www.instagram.com/edaydelivery/?hl=es">
                                 <Icon icon="bi:instagram" color="#000" />
                                 <p>@edaydelivery</p>
                             </a>
-                            <a href="#">
+                            <a href="https://www.facebook.com/edaydelivery">
                                 <Icon icon="bi:facebook" color="#000" />
                                 <p>eday@gmail.com</p>
                             </a>

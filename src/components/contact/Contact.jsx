@@ -11,24 +11,24 @@ const Contact = () => {
                     <div className="contactData__text">
                         <h1>Datos de Contacto</h1>
                         <div className="contactData_icons">
-                            <div className="contactData_icon">
+                            <a href='https://goo.gl/maps/K51twpZuaEjupHCU8' className="contactData_icon">
                                 <Icon icon="ep:location"/>
                                 <p>&nbsp; &nbsp; &nbsp; Calle Sucre N 1290 (Taller <br /> &nbsp; &nbsp; &nbsp; Creativo), Sullana, Piura</p>
-                            </div>
+                            </a>
                             <div className="contactData_icon">
                                 <Icon icon="bi:telephone-plus-fill"/>
                                 <p>&nbsp; &nbsp; &nbsp; +51-939731510 (Pedidos) <br />
                     &nbsp; &nbsp; &nbsp; +51-939731514 (Estudio Creativo)
                                 </p>
                             </div>
-                            <div className="contactData_icon">
+                            <a href='mailto:alan.m.camacho@gmail.com' className="contactData_icon">
                                 <Icon icon="mdi:gmail"/>
                                 <p>&nbsp; &nbsp; &nbsp; eday@gmail.com</p>
-                            </div>
-                            <div className="contactData_icon">
+                            </a>
+                            <a href='https://wa.me/51939731510?text=¡Hola! Estoy interesado en contactarte. Mi motivo es:' className="contactData_icon">
                                 <Icon icon="akar-icons:whatsapp-fill"/>
                                 <p>&nbsp; &nbsp; &nbsp; +51 939 731 510</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

@@ -11,11 +11,15 @@
     }
     &_icon {
         margin: 2% 2% 2% 0;
+        color: white;
         svg {
             width: 8%;
             height: 30%;
             max-width: 40.17px;
             max-height: 40.17px;
+        }
+        p:hover {
+            color: rgba($color: #ffffff, $alpha: .8);
         }
     }
 }

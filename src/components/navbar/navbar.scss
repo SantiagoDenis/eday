@@ -48,16 +48,30 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    .link {
+        color: black;
+        font-size: .9em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        cursor: pointer
+    }
 }
 
-.navbar__links a {
+.navbar__links .active {
+    color: rgb(231, 41, 41);
+    text-decoration: underline rgb(231, 41, 41) 2px;
+}
+
+.navbar__links a, .navbar__links .link {
     text-decoration: none;
     color: black;
     font-size: .9em;
     font-weight: 500;
 }
 
-.navbar__links a:hover {
+.navbar__links a:hover, .navbar__links .link:hover {
     color: rgb(231, 41, 41);
     text-decoration: underline rgb(231, 41, 41) 2px;
 }
@@ -84,6 +98,14 @@
         width: 22px;
     }
 
+}
+
+.navbar__socials {
+    a {
+        svg:hover {
+            color: rgba($color: #000000, $alpha: .2);
+        }
+    }
 }
 
 .navbarMobile__menuIcon {
@@ -115,12 +137,70 @@
     background-color: rgba($color: #000000, $alpha: .7);
     justify-content: space-around;
     
-    a {
+    a, .link {
         color: white;
         text-decoration: none;
         font-size: .9em;
         font-weight: 500;
-        margin-left: 10%;
+        margin-left: 3%;
+    }
+    .link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.mobileDropdown {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    z-index: 1000;
+    width: 27vw;
+    min-width: 234px;
+    min-height: 239px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba($color: #000000, $alpha: .7);    
+    justify-content: space-around;
+
+    a {
+        color: white;
+        font-size: .9em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        cursor: pointer
+    }
+
+}
+
+.mobileLink__clicked {
+    width: 47%;
+    background-color: rgba($color: #000000, $alpha: .7);  
+}
+
+.dropdown {
+    position: absolute;
+    top: 8vh;
+    left: 26vw;
+    z-index: 1000;
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-around;
+
+    a {
+        color: black;
+        font-size: .9em;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 4%;
     }
 }
 
@@ -146,5 +226,23 @@
         img {
             height: 63%;
         }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobileDropdown {
+        position: absolute;
+        top: 30.4%;
+        left: 3%;
+        z-index: 1000;
+        width: 27vw;
+        min-width: 234px;
+        min-height: 239px;
+        height: 30vh;
+        background-color: #000000;
+    }
+
+    .mobileLink__clicked {
+        width: 49.9%;
     }
 }

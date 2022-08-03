@@ -1,5 +1,6 @@
 import './landing.scss'
 import image from '../../assets/1.png'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
     return (
@@ -15,7 +16,9 @@ const Landing = () => {
                         <p>Hechos con materiales e insumos naturales y sanos. Los puedes personalizar a tu gusto, según temática u ocasión. Incluye papelería de alta calidad, personalizable. </p>
                     </div>
                     <div className="landing__btn">
-                        <button>Ver productos</button>
+                            <Link to={'categoria/productos-ecoamigables'}>
+                                Ver productos
+                            </Link>
                     </div>
                 </div>
                 <div className="landing__box landing__box--right">
@@ -24,7 +27,9 @@ const Landing = () => {
                         <p>Acompaña las mañanas de tu ser querido con nuestros desayunos personalizados. Incluye papelería de alta calidad, personalizable y activación.</p>
                     </div>
                     <div className="landing__btn--right">
-                        <button>Ver productos</button>
+                            <Link to={'categoria/desayunos-personalizados'}>
+                                Ver productos
+                            </Link>
                     </div>
                 </div>
                 <div className="landing__box landing__box--left">
@@ -33,7 +38,9 @@ const Landing = () => {
                         <p>Detalles rápidos, creativos y económicos.</p>
                     </div>
                     <div className="landing__btn">
-                        <button>Ver productos</button>
+                            <Link to={'categoria/detalles-express'}>
+                                Ver productos
+                            </Link>
                     </div>
                 </div>
                 <div className="landing__box landing__box--right">
@@ -42,16 +49,20 @@ const Landing = () => {
                         <p>Lorem ipsum dolor </p>
                     </div>
                     <div className="landing__btn--right">
-                        <button>Ver productos</button>
+                            <Link to={'categoria/papeleria-y-packaging'}>
+                                Ver productos
+                            </Link>
                     </div>
                 </div>
                 <div className="landing__box landing__box--left">
                     <div className="landing__text">
-                        <h1>Personalización <br/> de Souvenires</h1>
+                        <h1>Personalización <br/> de Souvenir</h1>
                         <p>Lorem ipsum dolor </p>
                     </div>
                     <div className="landing__btn">
-                        <button>Ver productos</button>
+                            <Link to={'categoria/personalizacion-de-souvenir'}>
+                                Ver productos
+                            </Link>
                     </div>
                 </div>
                 <div className="landing__box landing__box--right">
@@ -60,7 +71,9 @@ const Landing = () => {
                         <p>Lorem ipsum dolor </p>
                     </div>
                     <div className="landing__btn--right">
-                        <button>Ver productos</button>
+                            <Link to={'categoria/asesoria-de-marketing'}>
+                                Ver productos
+                            </Link>
                     </div>
                 </div>
             </div>

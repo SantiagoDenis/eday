@@ -84,7 +84,7 @@
     align-items: flex-end;
 }
 
-.landing__btn button {
+.landing__btn a {
     margin-bottom: 8%;
     margin-right: 8%;
     font-family: 'Poppins', sans-serif;
@@ -92,9 +92,10 @@
     border-radius: 7px;
     border: none;
     cursor: pointer;
+    background-color: white;
 }
 
-.landing__btn--right button {
+.landing__btn--right a {
     margin-bottom: 8%;
     margin-left: 8%;
     font-family: 'Poppins', sans-serif;
@@ -102,6 +103,7 @@
     border-radius: 7px;
     border: none;
     cursor: pointer;
+    background-color: white;
 }
 
 @media screen and (min-width:1024px) {
@@ -123,7 +125,7 @@
     .landing__text--right {
         margin-left: 30%;
     }
-    .landing__btn button, .landing__btn--right button {
+    .landing__btn a, .landing__btn--right a {
         padding: 15px;
         font-size: 1.3em;
         border-radius: 15px;

@@ -77,6 +77,10 @@
     color: black;
     margin-top: 7px;
 }
+
+.footer__contact a:hover {
+    color: rgba($color: #000000, $alpha: .7);
+}
 .footer__contact p {
     margin-left: 5px;
     font-size: small;

@@ -5,6 +5,7 @@ import showroom from '../../assets/6.jpg'
 import creative from '../../assets/7.jpg'
 import details from '../../assets/logo.jpg'
 import values from '../../assets/values.svg'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -83,20 +84,20 @@ const About = () => {
                 </div>
 
                 <div className="greetings__services">
-                    <div className="greetings__service" style={{gridArea: 'creative'}}>
+                    <Link to={'/estudio-creativo'} className="greetings__service" style={{gridArea: 'creative'}}>
                         <div className="greetings__img" style={{height: '92%'}}>
                             <img src={`${creative}`} alt="logo" style={{width: '100%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
 
                         </div>
                         <p style={{margin: '0'}}>Estudio Creativo</p>
-                    </div>
-                    <div className="greetings__service" style={{gridArea: 'details'}}>
+                    </Link>
+                    <Link to={'/categoria/productos-ecoamigables'} className="greetings__service" style={{gridArea: 'details'}}>
                         <div className="greetings__img">
                             <img src={`${details}`} alt="logo" style={{width: '100%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
  
                         </div>
                         <p >Detalles eco amigables</p>
-                    </div>
+                    </Link>
                     <div className="greetings__service" style={{gridArea: 'showroom'}}>
                         <div className="greetings__img">
                             <img src={`${showroom}`} alt="logo" style={{width: '100%', height: '100%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
