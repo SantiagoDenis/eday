@@ -124,7 +124,7 @@
     gap: 2%;
     align-items: center;
     position: relative;
-    min-height: 1020px;
+
 
     &__vision, &__mission, &__value {
         border: 2px solid rgb(231, 41, 41);
@@ -513,6 +513,9 @@
 }
 
 @media screen and (max-width:450px) {
+    .values {
+        min-height: 1020px;
+    }
     .aboutBanner {
         &__img {
             width: 59%;
