@@ -191,7 +191,7 @@
         &__text {
             margin-left: 0;
             margin-right: 50%;
-            margin-top: 16%;
+            margin-top: 25%;
             width: 100%;
 
             h1 {
@@ -247,10 +247,10 @@
             }
         }
         &__text {
+            margin-top: 36%;
             h1 {
                 width: 100%;
                 font-size: 1.6em;
-                margin-top: 175px;
             }
         }
 
@@ -332,6 +332,23 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .contactData {
+        &__text {
+            h1 {
+                margin-top: 90px;
+                font-size: 1.2em;
+            }
+        }
+        &_icon {
+            p {
+                font-size: .8em;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 380px) {
     .contactData {
         height: 70vh;
@@ -346,10 +363,23 @@
             width: 100%;
         }
         &__text {
+            margin-top: 49%;
             h1 {
-                margin-top: 120px;
                 text-align: center;
             }
         }
     }
 }
+
+@media screen and (max-height: 600px) {
+    .contactData {
+
+        &__text {
+            margin-top: 26%;
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
+

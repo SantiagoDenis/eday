@@ -99,3 +99,18 @@
     }
 
 }
+
+@media screen and (max-width: 380px) {
+    .creative__text {
+        p {
+            font-size: .7em;
+        }
+    }
+    .creative__columns {
+        ul {
+            li {
+                font-size: .8em;
+            }
+        }
+    }
+}

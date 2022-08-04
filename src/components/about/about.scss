@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: flex-end;
     position: relative;
+    min-height: 270px;
 
     &__data {
         background-color: rgb(231, 41, 41);
@@ -59,6 +60,7 @@
     height: 80vh;
     width: 100vw;
     margin-top: 5rem;
+    min-height: 651px;
 
     &__imgs {
         width: 40%;
@@ -122,6 +124,7 @@
     gap: 2%;
     align-items: center;
     position: relative;
+    min-height: 1020px;
 
     &__vision, &__mission, &__value {
         border: 2px solid rgb(231, 41, 41);
@@ -131,6 +134,7 @@
         font-weight: 400;
         display: flex;
         justify-content: center;
+        min-height: 270px;
 
         p {
             width: 80%;
@@ -568,6 +572,59 @@
         }
     }
 }
+
+@media screen and (max-height: 600px) {
+    .values {
+        margin-top: 20vh;
+
+        &__vision, &__mission, &__value {
+            width: 95%;
+            height: 39vh;
+            margin-bottom: 13vh;
+
+            p {
+                font-size: .85em;
+                margin-top: 30%;
+            }
+        }
+        &__sign {
+            
+            &--right {
+                right: 16.3%;
+                top: 58.7%;
+            }
+            &--middle {
+                right: 16.3%;
+                top: 25.2%;
+            }
+            &--left {
+                left: 16.3%;
+                top: -8%;
+
+            }
+        }
+        &__text {
+            font-size: 1.5em;
+            top: -12.5%;
+    
+            &--left {
+                left: 38.5%;
+                top: -2.5%;
+            }
+    
+            &--right {
+                right: 38%;
+                top: 64.3%;
+            }
+    
+            &--middle {
+                right: 40.7%;
+                top: 30.7%;
+            }
+        }
+    }
+}
+
 @media screen and (max-width:350px) {
     .values {
 
@@ -617,4 +674,80 @@
             }
         }
     }
+    .aboutInfo {
+        &__text {
+            h1, h2 {
+                font-size: 1.3em;
+            }
+            p {
+                font-size: .8em;
+            }
+        }
+    }
+    .greetings {
+        &__text {
+            p {
+                font-size: .8em;
+            }
+            h1 {
+                font-size: 1.6em;
+            }
+        }
+        &__service {
+            p {
+                font-size: .8em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .values {
+
+        &__vision, &__mission, &__value {
+            width: 95%;
+            margin-bottom: 14vh;
+
+            p {
+                font-size: .75em;
+                margin-top: 32%;
+            }
+        }
+        &__sign {
+            
+            &--right {
+                right: 16.3%;
+                top: 58.7%;
+            }
+            &--middle {
+                right: 16.3%;
+                top: 25.2%;
+            }
+            &--left {
+                left: 16.3%;
+                top: -8%;
+
+            }
+        }
+        &__text {
+            font-size: 1.5em;
+            top: -12.5%;
+    
+            &--left {
+                left: 35.5%;
+                top: -2.5%;
+            }
+    
+            &--right {
+                right: 35%;
+                top: 64.3%;
+            }
+    
+            &--middle {
+                right: 37.7%;
+                top: 30.7%;
+            }
+        }
+    }
+
 }

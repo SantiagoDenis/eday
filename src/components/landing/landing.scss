@@ -158,3 +158,10 @@
         margin-left: 7%;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .landing__respTitle {
+        margin-top: 27%;
+        width: 124%;
+    }
+}

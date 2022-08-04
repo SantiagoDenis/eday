@@ -5,7 +5,11 @@ import logo from '../../assets/logo.jpg'
 import Link from "./Link"
 
 
-const NavbarMobile = ({open, closeOpen, handleClick, showDropdown, handleDropdown }) => {
+const NavbarMobile = ({open, closeOpen, handleClick, showDropdown, handleDropdown, closeDropdown }) => {
+    const handleMenu = () => {
+        handleClick()
+        closeDropdown()
+    }
     return (
         <div className="navbarMobile">
             <div className="navbarMobile__socials">
@@ -20,7 +24,7 @@ const NavbarMobile = ({open, closeOpen, handleClick, showDropdown, handleDropdow
                 <img src={`${logo}`} alt="logo"/>
 
             </div>
-            <div className="navbarMobile__menu" onClick={handleClick}>
+            <div className="navbarMobile__menu" onClick={handleMenu}>
                 {
                     !open
                     ?

@@ -27,7 +27,7 @@ const Navbar = () => {
     return (
         <>
             <NavbarDesktop showDropdown={showDropdown} handleDropdown={handleDropdown} closeDropdown={closeDropdown}/>
-            <NavbarMobile open={open} closeOpen={closeOpen} handleClick={handleClick} showDropdown={showDropdown} handleDropdown={handleDropdown} />
+            <NavbarMobile open={open} closeOpen={closeOpen} handleClick={handleClick} showDropdown={showDropdown} handleDropdown={handleDropdown} closeDropdown={closeDropdown}/>
         </>
     )
 }

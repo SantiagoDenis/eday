@@ -12,7 +12,7 @@ const Landing = () => {
                 {/* Estos divs simulan las imagenes */}
                 <div className="landing__box landing__box--left">
                     <div className="landing__text">
-                        <h1 style={{marginTop: '14%'}}>Productos <br/> Ecoamigables</h1>
+                        <h1 className='landing__respTitle' style={{marginTop: '14%'}}>Productos <br/> Ecoamigables</h1>
                         <p>Hechos con materiales e insumos naturales y sanos. Los puedes personalizar a tu gusto, según temática u ocasión. Incluye papelería de alta calidad, personalizable. </p>
                     </div>
                     <div className="landing__btn">
