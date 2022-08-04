@@ -1,47 +1,63 @@
 import './prodList.scss'
 import Product from '../product/Product';
+import { getFirestore, collection, getDocs, where, query } from 'firebase/firestore'
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const ProductList = () => {
 
-    let products = [
-        {
-            id: 1,
-            img: 'imagen 1',
-            title: 'Titulo ejemplo 1',
-            miniDesc: 'Descripcion pequeña ejemplo 1',
-            price: `$12.00`
-        },
-        {
-            id: 2,
-            img: 'imagen 2',
-            title: 'Titulo ejemplo 2',
-            miniDesc: 'Descripcion pequeña ejemplo 2',
-            price: `$12.00`
-        },
-        {
-            id: 3,
-            img: 'imagen3',
-            title: 'Titulo ejemplo 3',
-            miniDesc: 'Descripcion pequeña ejemplo3',
-            price: `$12.00`
+    const {categoria} = useParams()
+
+    const [items, setItems] = useState([])
+
+    useEffect( () => {
+        const db = getFirestore()
+
+        const queryCollection = collection(db, 'items')
+
+        if (categoria) {
+            const queryCollectionFiltered = query(queryCollection, where('categoria', '==', categoria))
+            getDocs(queryCollectionFiltered)
+            .then(response => setItems(response.docs.map(item => {
+                return {id: item.id,
+                    ...item.data()
+                }
+            }))
+            )
+            .catch(err => console.log(err))
+            //There is no finally setting a loader to false because that loading state is in the item list childrens
+            
+        } else {
+
+            getDocs(queryCollection)
+            .then(response => setItems(response.docs.map(item => {
+                                        return {id: item.id,
+                                            ...item.data()
+                                        }
+            }))
+            )
+            .catch(err => console.log(err))
         }
-    ]
+    }, [categoria])
+
 
     return (
         <div className="productContainer">
             <div className='productContainer__list'>
                 {
-                    products
+                    items
                     ?
-                        products.map( (product) => {
+                        items.map( (item) => {
                             return (
-                                <div key={product.id} className="productContainer__card">
-                                    <Product product={product}/>
+                                <div key={item.id} className="productContainer__card">
+                                    <Product product={item}/>
                                 </div>
                             )
                         })
                     : 
-                        <h1 className='loader'>Loading</h1>
+                        <div className='loader'>
+                            <h1>Loading</h1>
+                        </div>
                 }
             </div>
         </div> 

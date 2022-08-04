@@ -1,5 +1,5 @@
 import './about.scss'
-import imageH from '../../assets/1262.jpg'
+import imageH from '../../assets/1262.JPG'
 import imageM from '../../assets/4.jpeg'
 import showroom from '../../assets/6.jpg'
 import creative from '../../assets/7.jpg'
