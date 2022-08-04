@@ -38,30 +38,27 @@ const NavbarDesktop = ({showDropdown, handleDropdown, closeDropdown}) => {
                         showDropdown
                         &&
                         <div className="dropdown">
-                            <NavLink to={'categoria/productos-ecoamigables'} onClick={handleDropdown}>
-                                Productos Ecoamigables
+                            <NavLink to={'categoria/detalles-ecoamigables'} onClick={handleDropdown}>
+                                Detalles Ecoamigables
                             </NavLink>
                             <NavLink to={'categoria/desayunos-personalizados'} onClick={handleDropdown}>
                                 Desayunos Personalizados
                             </NavLink>
-                            <NavLink to={'categoria/detalles-express'} onClick={handleDropdown}>
-                                Detalles Express
+                            <NavLink to={'categoria/detalles-corporativos'} onClick={handleDropdown}>
+                                Detalles Corporativos
                             </NavLink>
-                            <NavLink to={'categoria/papeleria-y-packaging'} onClick={handleDropdown}>
-                                Papelería y packaging
+                            <NavLink to={'categoria/sublimados'} onClick={handleDropdown}>
+                                Sublimados
                             </NavLink>
-                            <NavLink to={'categoria/personalizacion-de-souvenir'} onClick={handleDropdown}>
-                                Personalización de Souvenir       
-                            </NavLink>
-                            <NavLink to={'categoria/asesoria-de-marketing'} onClick={handleDropdown}>
-                                Asesoría de marketing        
+                            <NavLink to={'categoria/souvenirs-personalizados'} onClick={handleDropdown}>
+                                Souvenirs Personalizados       
                             </NavLink>
                         </div>
                     }
                     
-                <NavLink to={'productos-populares'} onClick={closeDropdown}>
+{/*                 <NavLink to={'productos-populares'} onClick={closeDropdown}>
                     <Link name={'Productos Populares'} />
-                </NavLink>
+                </NavLink> */}
                 <NavLink to={'estudio-creativo'} onClick={closeDropdown}>
                     <Link name={'Estudio Creativo'} />
                 </NavLink>

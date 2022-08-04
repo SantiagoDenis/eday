@@ -17,12 +17,12 @@ const ProductDetails = ({product}) => {
                 <h1>{product.title}</h1>
                 <h3>{product.type}</h3>
                 <h2>{product.price}</h2>
-                <h4>Descripción:</h4>
-                <p>{product.desc}</p>
+                <h4>{product.desc ? 'Descripcion:' : ''}</h4>
+                <p>{product.desc ? product.desc : ''}</p>
                 <h4>Personalización del producto según:</h4>
                 <p>Temática y ocasión</p>
                 <p>*Consultar Disponibilidad</p>
-                <button>Comprar por WhatsApp</button>
+                <a href={`https://wa.me/51939731510?text=¡Hola! Estoy interesado en el producto ${product.title}.`}>Comprar por WhatsApp</a>
             </div>
         </div>
     );

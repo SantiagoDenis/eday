@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import liston from '../../assets/liston.svg'
 
 const Product = ({product}) => {
+    console.log(product.img)
     return ( 
         <>
             <Link to={`/producto/${product.id}`}>
             <div className="productCard">
-                    {/* <img className="productCard__img" src={`${product.img}`} alt={`Imagen del producto ${product.title}`} /> */}
-                    <div className="productCard__img"></div>
+                    <div className="productCard__img" style={{backgroundImage: `url(${product.img})`}}></div>
                     <h2>{product.title}</h2>
-                    <small>{product.miniDesc}</small>
+                    <small>{product.miniDesc ? product.miniDesc : ''}</small>
                     <div className="productCard__btns">
                         <button>Pedir por WhatsApp</button>
                     </div>

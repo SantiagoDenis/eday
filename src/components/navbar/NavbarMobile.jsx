@@ -60,29 +60,26 @@ const NavbarMobile = ({open, closeOpen, handleClick, showDropdown, handleDropdow
                         showDropdown
                         &&
                         <div className="mobileDropdown">
-                            <NavLink to={'categoria/productos-ecoamigables'} onClick={closeOpen}>
-                                Productos Ecoamigables
+                            <NavLink to={'categoria/detalles-ecoamigables'} onClick={closeOpen}>
+                                Detalles Ecoamigables
                             </NavLink>
                             <NavLink to={'categoria/desayunos-personalizados'} onClick={closeOpen}>
                                 Desayunos Personalizados
                             </NavLink>
-                            <NavLink to={'categoria/detalles-express'} onClick={closeOpen}>
-                                Detalles Express
+                            <NavLink to={'categoria/detalles-corporativos'} onClick={closeOpen}>
+                                Detalles Corporativos
                             </NavLink>
-                            <NavLink to={'categoria/papeleria-y-packaging'} onClick={closeOpen}>
-                                Papelería y packaging
+                            <NavLink to={'categoria/sublimados'} onClick={closeOpen}>
+                                Sublimados
                             </NavLink>
-                            <NavLink to={'categoria/personalizacion-de-souvenir'} onClick={closeOpen}>
-                                Personalización de Souvenir       
-                            </NavLink>
-                            <NavLink to={'categoria/asesoria-de-marketing'} onClick={closeOpen}>
-                                Asesoría de marketing        
+                            <NavLink to={'categoria/souvenirs-personalizados'} onClick={closeOpen}>
+                                Souvenirs Personalizados       
                             </NavLink>
                         </div>
                     }
-                    <NavLink to={'productos-populares'} onClick={handleClick}>
+{/*                     <NavLink to={'productos-populares'} onClick={handleClick}>
                         Productos Populares
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to={'estudio-creativo'} onClick={handleClick}>
                         Estudio Creativo
                     </NavLink>
