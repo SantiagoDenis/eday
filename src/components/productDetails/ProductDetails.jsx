@@ -6,11 +6,12 @@ const ProductDetails = ({product}) => {
         <div className="details">
             <div className="details__imgs">
                 <div className="details__imgs--lg">
-                    <div className="img"></div>
+                    <div className="img" style={{backgroundImage: `url(${product.img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+
                 </div>
                 <div className="details__imgs--sm">
-                    <div className="img"></div>
-                    <div className="img"></div>
+                    <div className="img" style={{backgroundImage: `url(${product.img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
+                    <div className="img" style={{backgroundImage: `url(${product.img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}></div>
                 </div>
             </div>
             <div className="details__info">
