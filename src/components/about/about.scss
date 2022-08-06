@@ -501,6 +501,12 @@
         &__service {
             width: 50%;
             height: 30%;
+            margin-top: 10%;
+
+            p {
+                width: 135%;
+                text-align: center;
+            }
         }
 
         &__services {

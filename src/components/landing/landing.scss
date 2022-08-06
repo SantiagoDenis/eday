@@ -105,6 +105,13 @@
     cursor: pointer;
     background-color: white;
 }
+.landing__box--left {
+    .landing__text {
+        h1, p {
+            margin-left: 10%;
+        }
+    }
+}
 
 @media screen and (min-width:1024px) {
     .img2 {
@@ -116,12 +123,17 @@
         height: 65vh;
         width: 55%;
     }
+    .landing__box--left {
+        .landing__text {
+            h1, p {
+                margin-left: 10%;
+            }
+        }
+    }
     .landing__box--right {
         margin-left: 45%;
     }
-    .landing__text {
-        margin-left: 10%;
-    }
+
     .landing__text--right {
         margin-left: 30%;
     }
@@ -154,6 +166,9 @@
 }
 
 @media screen and (max-width:380px) {
+    .img2 {
+        height: 15vh;
+    }
     .landing__text--right {
         margin-left: 7%;
     }

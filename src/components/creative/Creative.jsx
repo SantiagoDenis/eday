@@ -8,7 +8,7 @@ const Creative = () => {
                 <img src={`${image}`} alt="Les traemos un nuevo servicio porque queremos estar mas cerca de ustedes para regalar amor" />
             </div>
             <div className="creative__title">
-                <h1>Les traemos un nuevo servicio porque queremos estar <br /><strong>más cerca de ustedes para regalar amor</strong></h1>
+                <h1>Les traemos un nuevo servicio <br /> porque queremos estar <br /><strong>más cerca de ustedes <br /> para regalar amor</strong></h1>
             </div>
             <div className="creative__text">
                 <p>Creamos y rediseñamos logos para tu empresa o negocio y personalizamos distintos artículos: tazas, tomatodos, cuadros, para reforzar la imagen de tu empresa o sorprender a tu ser querido.</p>
