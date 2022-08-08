@@ -370,6 +370,13 @@
         }
     }
 }
+@media screen and (max-width: 350px) {
+    .contactData {
+        &__text {
+            margin-top: 47%;
+        }
+    }
+}
 
 @media screen and (max-height: 600px) {
     .contactData {

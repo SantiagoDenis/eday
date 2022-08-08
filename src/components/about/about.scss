@@ -39,7 +39,7 @@
 
     &__img {
         height: 87%;
-        width: 38%;
+        width: 30%;
         position: absolute;
         top: 0;
         transform: translateX(50%);
@@ -139,8 +139,8 @@
         p {
             width: 80%;
             margin-bottom: 5%;
-            margin-top: 24%;
-            font-size: .9em;
+            margin-top: 30%;
+            font-size: 1em;
         }
     }
 
@@ -280,8 +280,14 @@
             }
         }
     }
-
+    
     .values {
+        
+            &__vision, &__mission, &__value {
+                p {
+                    font-size: .9em;
+                }
+            }
         &__text {
             font-size: 2em;
             top: -10.5%;
@@ -644,7 +650,7 @@
 
             p {
                 font-size: .85em;
-                margin-top: 30%;
+                margin-top: 46%;
             }
         }
         &__sign {

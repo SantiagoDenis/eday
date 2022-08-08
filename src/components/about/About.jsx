@@ -79,7 +79,7 @@ const About = () => {
             <div className="greetings">
                 <div className="greetings__text">
                     <p>Te ofrecemos con mucho cariño</p>
-                    <h1>Detalles ecoamigables, estudio y taller creativo</h1>
+                    <h1>Detalles ecoamigables, estudio <br /> y taller creativo</h1>
                     <p style={{marginTop: '12%'}}>Conoce nuestros servicios:</p>
                 </div>
 
