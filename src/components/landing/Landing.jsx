@@ -19,7 +19,7 @@ const Landing = () => {
                 <div className="landing__line">
                     <div className="landing__box landing__box--left">
                         <div className="landing__text">
-                            <h1 className='landing__respTitle' style={{marginTop: '14%'}}>Detalles <br/> Ecoamigables</h1>
+                            <h1 style={{marginTop: '14%'}}>Detalles <br/> Ecoamigables</h1>
                             <p>Hechos con materiales e insumos naturales y sanos. Los puedes personalizar a tu gusto, según temática u ocasión. Incluye papelería de alta calidad, personalizable. </p>
                         </div>
                         <div className="landing__btn">
@@ -87,7 +87,7 @@ const Landing = () => {
 
                     <div className="landing__box landing__box--left">
                         <div className="landing__text">
-                            <h1>Souvenirs Personalizados</h1>
+                            <h1 style={{marginTop: '14%'}}>Souvenirs Personalizados</h1>
                             <p>Desde un pin para llevarlo con un elegante blazer o tu camiseta preferida hasta un imantado en tu refrigeradora para recordar a tus seres queridos, nuestros souvenirs personalizados le darán un toque diferente a esos momentos. </p>
                         </div>
                         <div className="landing__btn">
