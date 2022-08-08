@@ -13,7 +13,7 @@ const Contact = () => {
                         <div className="contactData_icons">
                             <a href='https://goo.gl/maps/K51twpZuaEjupHCU8' className="contactData_icon">
                                 <Icon icon="ep:location"/>
-                                <p>&nbsp; &nbsp; &nbsp; Calle Sucre N 1290 (Taller <br /> &nbsp; &nbsp; &nbsp; Creativo), Sullana, Piura</p>
+                                <p>&nbsp; &nbsp; &nbsp; Calle Sucre N°1290 (Taller <br /> &nbsp; &nbsp; &nbsp; Creativo), Sullana, Piura</p>
                             </a>
                             <div className="contactData_icon">
                                 <Icon icon="bi:telephone-plus-fill"/>
@@ -21,9 +21,9 @@ const Contact = () => {
                     &nbsp; &nbsp; &nbsp; +51-939731514 (Estudio Creativo)
                                 </p>
                             </div>
-                            <a href='mailto:alan.m.camacho@gmail.com' className="contactData_icon">
+                            <a href='mailto:edaydelivery@gmail.com' className="contactData_icon">
                                 <Icon icon="mdi:gmail"/>
-                                <p>&nbsp; &nbsp; &nbsp; eday@gmail.com</p>
+                                <p>&nbsp; &nbsp; &nbsp; edaydelivery@gmail.com</p>
                             </a>
                             <a href='https://wa.me/51939731510?text=¡Hola! Estoy interesado en contactarte. Mi motivo es:' className="contactData_icon">
                                 <Icon icon="akar-icons:whatsapp-fill"/>
@@ -40,7 +40,7 @@ const Contact = () => {
             <div className="location">
                 <h1>GPS Navegación</h1>
                 <div className="location__map">
-                    <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Sucre%201290,%20Sullana,%20Per%C3%BA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+                    <iframe title='Map' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Sucre%201290,%20Sullana,%20Per%C3%BA&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
                 </div>
             </div>
 

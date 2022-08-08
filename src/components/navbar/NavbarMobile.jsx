@@ -67,7 +67,7 @@ const NavbarMobile = ({open, closeOpen, handleClick, showDropdown, handleDropdow
                                 Desayunos Personalizados
                             </NavLink>
                             <NavLink to={'categoria/detalles-corporativos'} onClick={closeOpen}>
-                                Detalles Corporativos
+                                Detalles Express
                             </NavLink>
                             <NavLink to={'categoria/sublimados'} onClick={closeOpen}>
                                 Sublimados

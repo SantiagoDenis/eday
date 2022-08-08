@@ -45,7 +45,7 @@ const NavbarDesktop = ({showDropdown, handleDropdown, closeDropdown}) => {
                                 Desayunos Personalizados
                             </NavLink>
                             <NavLink to={'categoria/detalles-corporativos'} onClick={handleDropdown}>
-                                Detalles Corporativos
+                                Detalles Express
                             </NavLink>
                             <NavLink to={'categoria/sublimados'} onClick={handleDropdown}>
                                 Sublimados

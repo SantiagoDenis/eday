@@ -13,7 +13,7 @@ const Creative = () => {
             <div className="creative__text">
                 <p>Creamos y rediseñamos logos para tu empresa o negocio y personalizamos distintos artículos: tazas, tomatodos, cuadros, para reforzar la imagen de tu empresa o sorprender a tu ser querido.</p>
                 <br />
-                <p>Puedes solicitar una cotización a los números 939731510 y 939731514 o visítanos en nuestro showroom Calle Sucra N 1290 Sullana.</p>
+                <p>Puedes solicitar una cotización a los números 939731510 y 939731514 o visítanos en nuestro showroom Calle Sucre N°1290 Sullana.</p>
                 <br />
                 <br />
                 <h2>Te ofrecemos:</h2>

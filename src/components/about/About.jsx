@@ -35,7 +35,7 @@ const About = () => {
                 </div>
                 <div className="aboutInfo__text">
                     <h1>¿Quienes somos?</h1>
-                    <p>Eday.pe detalles eco amigables nace en octubre del 2018 en Sullana, Piura como una opción para ofrecer detalles eco amigables hechos totalmente de forma artesanal con indumentaria e insumos naturales, fomentando la reutilización.</p>
+                    <p>Eday.pe detalles eco amigables nace en octubre del 2017 en Sullana, Piura como una opción para ofrecer detalles eco amigables hechos totalmente de forma artesanal con indumentaria e insumos naturales, fomentando la reutilización.</p>
                     <br />
                     <p>Algunos de nuestros servicios son: detalles personalizados, regalitos, suvenires, además de diseño gráfico y asesoría en marketing.</p>
                     <p>Somos un emprendimiento responsable, ágil y confiable. Nos preocupamos por dar el moejor servicio a nuestros clientes, brindando una compra segura y cómoda.</p>
