@@ -178,12 +178,23 @@
 
 @media screen and (max-width: 800px) {
     .landing {
+        &__box {
+            width: 100%;
+
+            &--right {
+                margin-left: 0;
+            }
+        }
         &__image {
             display: none;
         }
-        &__box--right {
-            margin-left: 25%;
+        &__btn {
+            a {
+                font-size: .8em;
+                padding: 12px;
+            }
         }
+
     }
 }
 

@@ -63,10 +63,10 @@ const NavbarDesktop = ({showDropdown, handleDropdown, closeDropdown}) => {
                     <Link name={'Estudio Creativo'} />
                 </NavLink>
                 <NavLink to={'sobre-nosotros'} onClick={closeDropdown}>
-                    <Link name={'Quienes Somos'} />
+                    <Link name={'Quiénes Somos'} />
                 </NavLink>
                 <NavLink to={'contacto'} onClick={closeDropdown}>
-                    <Link name={'Contactanos'} />         
+                    <Link name={'Contáctanos'} />         
                 </NavLink>
             </div>
             <div className="navbar__socials">

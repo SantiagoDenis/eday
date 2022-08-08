@@ -9,15 +9,16 @@ const Footer = () => {
             <div className="footer--flex">
                 <div className="footer__logo">
                     <div className="footer__img">
-                        <img src={`${logo}`} alt="logo" style={{width: '100%', height: '74%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
+                        <img src={`${logo}`} alt="logo" style={{maxHeight: '120px' , minWidth: '100px', width: '100%', height: '74%', backgroundRepeat:'no-repeat', backgroundSize: 'cover'}}/>
                     </div>
                 </div>
                 <div className="footer__body">
                     <div className="footer__text">
-                        <h3>Quienes somos</h3>
+                        <h3>Quiénes somos</h3>
                         <p>Eday.pe detalles eco amigables nace en octubre del 2018 en Sullana, Piura como una opción para ofrecer detalles eco amigables hechos totalmente de forma artesanal con indumentaria e insumos naturales, fomentando la reutilización.</p>
                     </div>
-                    <div className="footer__socials">
+                </div>
+                <div className="footer__contactContainer">
                         <div className="footer__contact">
                             <h3>Contáctanos</h3>
                             <a href="https://wa.me/51939731510?text=¡Hola! Estoy interesado en contactarte. Mi motivo es:">
@@ -40,7 +41,6 @@ const Footer = () => {
                                 <p>edaydelivery</p>
                             </a>
                         </div>
-                    </div>
                 </div>
             </div>
             <div className="footer--block">

@@ -84,10 +84,10 @@ const NavbarMobile = ({open, closeOpen, handleClick, showDropdown, handleDropdow
                         Estudio Creativo
                     </NavLink>
                     <NavLink to={'sobre-nosotros'} onClick={handleClick}>
-                        Quienes Somos
+                        Quiénes Somos
                     </NavLink>
                     <NavLink to={'contacto'} onClick={handleClick}>
-                        Contactanos         
+                        Contáctanos         
                     </NavLink>
                 </div>
             }
